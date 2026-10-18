@@ -284,3 +284,11 @@ details p { margin: 8px 0 0; }
 @media (prefers-reduced-motion: no-preference) {
   .btn, .langs button { transition: background-color 0.15s ease; }
 }
+
+/* Lengre firmanavn i toppen: la det bryte over to linjer på smale skjermer */
+.langs { flex-shrink: 0; }
+@media (max-width: 480px) {
+  .brand { font-size: 16px; min-width: 0; }
+  .brand span { white-space: normal; line-height: 1.15; }
+  .brand span b { white-space: nowrap; }
+}
