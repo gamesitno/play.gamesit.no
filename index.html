@@ -12,10 +12,15 @@
   <meta property="og:description" content="Small, cozy games for the whole family: Zoo Pop, Tumble Numbers and Slippery Paws.">
   <meta property="og:image" content="https://play.gamesit.no/img/zoopop-icon.png">
   <meta property="og:url" content="https://play.gamesit.no/">
+  <link rel="canonical" href="https://play.gamesit.no/">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/site.css">
   <script src="assets/lang.js"></script>
+  <script>
+    /* Gamle lenker som /#zoopop går til spillets egen side */
+    (function () { var h = location.hash.slice(1); if (["zoopop", "tumble-numbers", "slippery-paws"].indexOf(h) >= 0) location.replace(h + "/" + location.search); })();
+  </script>
 </head>
 <body>
   <div class="wrap">
@@ -35,20 +40,20 @@
         <div data-l="nb" lang="nb">
           <p class="eyebrow">Laget i Norge</p>
           <h1>Små, koselige spill for hele familien</h1>
-          <p>Andersen Games &amp; IT er en liten, uavhengig spillutvikler. Her finner du spillene, brukerstøtte og personvernerklæringen.</p>
+          <p>Andersen Games &amp; IT er en liten, uavhengig spillutvikler. Hvert spill har sin egen side med brukerstøtte og personvernerklæring.</p>
         </div>
         <div data-l="en" lang="en">
           <p class="eyebrow">Made in Norway</p>
           <h1>Small, cozy games for the whole family</h1>
-          <p>Andersen Games &amp; IT is a small independent game developer. Here you'll find the games, support and the privacy policy.</p>
+          <p>Andersen Games &amp; IT is a small independent game developer. Each game has its own page with support and a privacy policy.</p>
         </div>
       </section>
 
-      <article class="game" id="zoopop" aria-labelledby="zoopop-title">
-        <div class="game-head">
-          <img class="app-icon" src="img/zoopop-icon.png" alt="Zoo Pop app icon" width="136" height="136">
+      <section class="game-grid" aria-label="Spill / Games">
+        <a class="game-card" href="zoopop/">
+          <img class="app-icon" src="img/zoopop-icon.png" alt="" width="136" height="136" loading="lazy">
           <div>
-            <h2 id="zoopop-title">Zoo Pop<small>ANIMAL MERGE</small></h2>
+            <h2>Zoo Pop<small>ANIMAL MERGE</small></h2>
             <p data-l="nb" lang="nb">Slipp dyrene ned i boksen. To like dyr smelter sammen til et større – helt opp til det største dyret av dem alle. Men pass på så boksen ikke blir full!</p>
             <p data-l="en" lang="en">Drop animals into the box. Two of the same merge into a bigger one – all the way up to the biggest animal of all. Just don't let the box overflow!</p>
             <div class="badges">
@@ -58,59 +63,13 @@
               <span class="badge soft" data-l="nb" lang="nb">Gratis</span>
               <span class="badge soft" data-l="en" lang="en">Free</span>
             </div>
+            <span class="more"><span data-l="nb" lang="nb">Les mer, brukerstøtte og personvern →</span><span data-l="en" lang="en">More, support and privacy →</span></span>
           </div>
-        </div>
-
-        <div class="shots">
-          <figure>
-            <img data-l="nb" src="img/zoopop-menu-nb.webp" alt="Hovedmenyen i Zoo Pop" width="600" height="1067" loading="lazy">
-            <img data-l="en" src="img/zoopop-menu.webp" alt="Zoo Pop main menu" width="600" height="1067" loading="lazy">
-            <figcaption><span data-l="nb" lang="nb">Velg dyresett</span><span data-l="en" lang="en">Pick an animal set</span></figcaption>
-          </figure>
-          <figure>
-            <img data-l="nb" src="img/zoopop-play-nb.webp" alt="Zoo Pop: dyr som slås sammen i boksen" width="600" height="1067" loading="lazy">
-            <img data-l="en" src="img/zoopop-play.webp" alt="Zoo Pop gameplay with merging animals" width="600" height="1067" loading="lazy">
-            <figcaption><span data-l="nb" lang="nb">Slipp og slå sammen</span><span data-l="en" lang="en">Drop and merge</span></figcaption>
-          </figure>
-          <figure>
-            <img data-l="nb" src="img/zoopop-collection-nb.webp" alt="Dyresamlingen i Zoo Pop" width="600" height="1067" loading="lazy">
-            <img data-l="en" src="img/zoopop-collection.webp" alt="Zoo Pop animal collection" width="600" height="1067" loading="lazy">
-            <figcaption><span data-l="nb" lang="nb">Samle alle dyrene</span><span data-l="en" lang="en">Collect them all</span></figcaption>
-          </figure>
-        </div>
-
-        <div class="features">
-          <div class="feature">
-            <h3><span class="dot" style="background:#ffd43b"></span><span data-l="nb" lang="nb">55 søte dyr</span><span data-l="en" lang="en">55 cute animals</span></h3>
-            <p data-l="nb" lang="nb">Fem dyresett: land, hav, dinoer, fugler og hunder. Lag nivå 8 for å låse opp neste sett.</p>
-            <p data-l="en" lang="en">Five animal sets: land, sea, dinos, birds and dogs. Reach level 8 to unlock the next set.</p>
-          </div>
-          <div class="feature">
-            <h3><span class="dot" style="background:#e64980"></span><span data-l="nb" lang="nb">Kombo og hjelpemidler</span><span data-l="en" lang="en">Combos and power-ups</span></h3>
-            <p data-l="nb" lang="nb">Slå sammen flere dyr på rad for kombo, og bruk Rist, Bytt eller Fjern ett dyr når det blir trangt.</p>
-            <p data-l="en" lang="en">Chain merges for combos, and use Shake, Swap or Remove one when things get tight.</p>
-          </div>
-          <div class="feature">
-            <h3><span class="dot" style="background:#51cf66"></span><span data-l="nb" lang="nb">For hele familien</span><span data-l="en" lang="en">For the whole family</span></h3>
-            <p data-l="nb" lang="nb">Ingen konto, ingen innlogging og ingen chat. Reklamen er begrenset til innhold som passer for alle, og kan fjernes med et engangskjøp.</p>
-            <p data-l="en" lang="en">No account, no sign-in and no chat. Ads are limited to content suitable for everyone, and can be removed with a one-time purchase.</p>
-          </div>
-          <div class="feature">
-            <h3><span class="dot" style="background:#7950f2"></span><span data-l="nb" lang="nb">Seks språk</span><span data-l="en" lang="en">Six languages</span></h3>
-            <p data-l="nb" lang="nb">Norsk, engelsk, tysk, polsk, fransk og spansk.</p>
-            <p data-l="en" lang="en">English, Norwegian, German, Polish, French and Spanish.</p>
-          </div>
-        </div>
-        <p class="game-links">
-          <a href="zoopop/personvern.html"><span data-l="nb" lang="nb">Personvern for Zoo Pop</span><span data-l="en" lang="en">Zoo Pop privacy policy</span></a>
-        </p>
-      </article>
-
-      <article class="game" id="tumble-numbers" aria-labelledby="tumble-title">
-        <div class="game-head">
-          <img class="app-icon" src="img/tumble-numbers-icon.png" alt="Tumble Numbers app icon" width="136" height="136">
+        </a>
+        <a class="game-card" href="tumble-numbers/">
+          <img class="app-icon" src="img/tumble-numbers-icon.png" alt="" width="136" height="136" loading="lazy">
           <div>
-            <h2 id="tumble-title">Tumble Numbers<small>DROP · MERGE · CHAIN</small></h2>
+            <h2>Tumble Numbers<small>DROP · MERGE · CHAIN</small></h2>
             <p data-l="nb" lang="nb">Slipp tall ned i kolonnene. Like tall som havner inntil hverandre, slår seg sammen og dobles – og faller videre, så ett godt slipp kan sette i gang en hel kjedereaksjon.</p>
             <p data-l="en" lang="en">Drop numbers into the columns. Matching numbers that touch merge and double – and keep tumbling, so one good drop can set off a whole chain reaction.</p>
             <div class="badges">
@@ -120,56 +79,13 @@
               <span class="badge soft" data-l="nb" lang="nb">Gratis</span>
               <span class="badge soft" data-l="en" lang="en">Free</span>
             </div>
+            <span class="more"><span data-l="nb" lang="nb">Les mer, brukerstøtte og personvern →</span><span data-l="en" lang="en">More, support and privacy →</span></span>
           </div>
-        </div>
-
-        <div class="shots">
-          <figure>
-            <img src="img/tumble-numbers-play.webp" alt="Tumble Numbers: the number above the board and where it will land" width="600" height="1067" loading="lazy">
-            <figcaption><span data-l="nb" lang="nb">Sikt og slipp</span><span data-l="en" lang="en">Aim and drop</span></figcaption>
-          </figure>
-          <figure>
-            <img src="img/tumble-numbers-chain.webp" alt="Tumble Numbers: a chain reaction" width="600" height="1067" loading="lazy">
-            <figcaption><span data-l="nb" lang="nb">Kjedereaksjoner</span><span data-l="en" lang="en">Chain reactions</span></figcaption>
-          </figure>
-          <figure>
-            <img src="img/tumble-numbers-over.webp" alt="Tumble Numbers: board full and a new best score" width="600" height="1067" loading="lazy">
-            <figcaption><span data-l="nb" lang="nb">Slå rekorden</span><span data-l="en" lang="en">Beat your best</span></figcaption>
-          </figure>
-        </div>
-
-        <div class="features">
-          <div class="feature">
-            <h3><span class="dot" style="background:#f2b33d"></span><span data-l="nb" lang="nb">Én enkel regel</span><span data-l="en" lang="en">One simple rule</span></h3>
-            <p data-l="nb" lang="nb">Like tall som møtes, slås sammen og dobles. To like naboer på én gang gir fire ganger så mye, tre gir åtte.</p>
-            <p data-l="en" lang="en">Matching numbers that touch merge and double. Two matching neighbours at once make it four times as big, three make it eight.</p>
-          </div>
-          <div class="feature">
-            <h3><span class="dot" style="background:#5bc0a8"></span><span data-l="nb" lang="nb">Kjedereaksjoner</span><span data-l="en" lang="en">Chain reactions</span></h3>
-            <p data-l="nb" lang="nb">Sammenslåtte tall faller ned og kan slå seg sammen igjen. Planlegg slippet, og se det tumle.</p>
-            <p data-l="en" lang="en">Merged numbers fall and can merge again. Plan your drop and watch it tumble.</p>
-          </div>
-          <div class="feature">
-            <h3><span class="dot" style="background:#ee7b6a"></span><span data-l="nb" lang="nb">Ingen klokke</span><span data-l="en" lang="en">No timer</span></h3>
-            <p data-l="nb" lang="nb">Tenk så lenge du vil. Du ser tallet du slipper og det neste, og spillet lagres etter hvert trekk.</p>
-            <p data-l="en" lang="en">Take your time. You see the number you're dropping and the next one, and the game is saved after every move.</p>
-          </div>
-          <div class="feature">
-            <h3><span class="dot" style="background:#a99af0"></span><span data-l="nb" lang="nb">For hele familien</span><span data-l="en" lang="en">For the whole family</span></h3>
-            <p data-l="nb" lang="nb">Ingen konto, ingen innlogging og ingen kjøp. På norsk, engelsk, tysk, polsk, fransk og spansk. En kort reklame etter hvert ferdige spill, med innhold som passer for alle.</p>
-            <p data-l="en" lang="en">No account, no sign-in and no purchases. In English, Norwegian, German, Polish, French and Spanish. A short ad after each finished game, with content suitable for everyone.</p>
-          </div>
-        </div>
-        <p class="game-links">
-          <a href="tumble-numbers/personvern.html"><span data-l="nb" lang="nb">Personvern for Tumble Numbers</span><span data-l="en" lang="en">Tumble Numbers privacy policy</span></a>
-        </p>
-      </article>
-
-      <article class="game" id="slippery-paws" aria-labelledby="slippery-title">
-        <div class="game-head">
-          <img class="app-icon" src="img/slippery-paws-icon.png" alt="Slippery Paws app icon" width="136" height="136">
+        </a>
+        <a class="game-card" href="slippery-paws/">
+          <img class="app-icon" src="img/slippery-paws-icon.png" alt="" width="136" height="136" loading="lazy">
           <div>
-            <h2 id="slippery-title">Slippery Paws<small>PENGUIN SLIDING PUZZLES</small></h2>
+            <h2>Slippery Paws<small>PENGUIN SLIDING PUZZLES</small></h2>
             <p data-l="nb" lang="nb">Hjelp en sulten pingvin fram til fisken over isen. Sveip for å gli – men når pingvinen først er i gang, stopper den ikke før den treffer en stein. Finn den korteste veien og få tre stjerner.</p>
             <p data-l="en" lang="en">Help a hungry penguin reach its fish across the ice. Swipe to slide – but once it starts moving, it won't stop until it hits a rock. Find the shortest path and earn three stars.</p>
             <div class="badges">
@@ -179,153 +95,17 @@
               <span class="badge soft" data-l="nb" lang="nb">Gratis</span>
               <span class="badge soft" data-l="en" lang="en">Free</span>
             </div>
+            <span class="more"><span data-l="nb" lang="nb">Les mer, brukerstøtte og personvern →</span><span data-l="en" lang="en">More, support and privacy →</span></span>
           </div>
-        </div>
+        </a>
+      </section>
 
-        <div class="shots">
-          <figure>
-            <img src="img/slippery-paws-play.webp" alt="Slippery Paws: a level with open water and snow" width="600" height="1067" loading="lazy">
-            <figcaption><span data-l="nb" lang="nb">Gli til fisken</span><span data-l="en" lang="en">Slide to the fish</span></figcaption>
-          </figure>
-          <figure>
-            <img src="img/slippery-paws-solved.webp" alt="Slippery Paws: level solved with three stars" width="600" height="1067" loading="lazy">
-            <figcaption><span data-l="nb" lang="nb">Tre stjerner</span><span data-l="en" lang="en">Three stars</span></figcaption>
-          </figure>
-          <figure>
-            <img src="img/slippery-paws-worlds.webp" alt="Slippery Paws: ten frozen worlds" width="600" height="1067" loading="lazy">
-            <figcaption><span data-l="nb" lang="nb">Ti verdener</span><span data-l="en" lang="en">Ten worlds</span></figcaption>
-          </figure>
-        </div>
-
-        <div class="features">
-          <div class="feature">
-            <h3><span class="dot" style="background:#bfe3f2"></span><span data-l="nb" lang="nb">245 gåter</span><span data-l="en" lang="en">245 puzzles</span></h3>
-            <p data-l="nb" lang="nb">Ti frosne verdener med snø, råk, vindpiler og sprukken is – større og vanskeligere for hver verden. Hvert nivå har en bevist korteste løsning.</p>
-            <p data-l="en" lang="en">Ten frozen worlds with snow, open water, wind arrows and cracking ice – bigger and harder in every world. Every level has a proven shortest solution.</p>
-          </div>
-          <div class="feature">
-            <h3><span class="dot" style="background:#f2b33d"></span><span data-l="nb" lang="nb">Uendelig modus</span><span data-l="en" lang="en">Endless mode</span></h3>
-            <p data-l="nb" lang="nb">Nye brett uten slutt, laget på telefonen, som blir vanskeligere jo mer du spiller.</p>
-            <p data-l="en" lang="en">New boards without end, made on your phone, that get harder as you play.</p>
-          </div>
-          <div class="feature">
-            <h3><span class="dot" style="background:#5c6b78"></span><span data-l="nb" lang="nb">Ingen stress</span><span data-l="en" lang="en">No stress</span></h3>
-            <p data-l="nb" lang="nb">Ingen klokke og ingen reklame. Hint koster stjerner, som du får når du låser opp nivåer. Spillet virker uten nett.</p>
-            <p data-l="en" lang="en">No timers and no ads. Hints cost stars, which you earn by unlocking levels. Works offline.</p>
-          </div>
-          <div class="feature">
-            <h3><span class="dot" style="background:#51cf66"></span><span data-l="nb" lang="nb">For alle</span><span data-l="en" lang="en">For everyone</span></h3>
-            <p data-l="nb" lang="nb">Ingen konto og ingen kjøp. Retningsknapper, fargeblind-symboler og redusert bevegelse. En kort reklame mellom nivåene innimellom.</p>
-            <p data-l="en" lang="en">No account and no purchases. Direction buttons, colour-blind symbols and reduce motion. A short ad between levels now and then.</p>
-          </div>
-        </div>
-        <p class="game-links">
-          <a href="slippery-paws/personvern.html"><span data-l="nb" lang="nb">Personvern for Slippery Paws</span><span data-l="en" lang="en">Slippery Paws privacy policy</span></a>
-        </p>
-      </article>
-
-      <section class="support" id="support" aria-labelledby="support-title">
+      <section class="support support-single" id="support" aria-labelledby="support-title">
         <div>
           <h2 id="support-title"><span data-l="nb" lang="nb">Brukerstøtte</span><span data-l="en" lang="en">Support</span></h2>
-          <p data-l="nb" lang="nb">Har du spørsmål, funnet en feil eller trenger hjelp med et kjøp? Send en e-post, så svarer jeg så fort jeg kan.</p>
-          <p data-l="en" lang="en">Got a question, found a bug or need help with a purchase? Send an email and I'll get back to you as soon as I can.</p>
+          <p data-l="nb" lang="nb">Har du spørsmål, funnet en feil eller trenger hjelp med et kjøp? Send en e-post, så svarer vi så fort vi kan. Svar på vanlige spørsmål finner du på siden til hvert spill.</p>
+          <p data-l="en" lang="en">Got a question, found a bug or need help with a purchase? Send an email and we'll get back to you as soon as we can. Answers to common questions are on each game's page.</p>
           <a class="btn" href="mailto:post@gamesit.no">post@gamesit.no</a>
-        </div>
-        <div>
-          <div data-l="nb" lang="nb">
-            <div class="faq-group">
-            <h3>Zoo Pop</h3>
-            <details>
-              <summary>Hvordan fjerner jeg reklamen?</summary>
-              <p>Kjøp «Fjern reklame» i butikken eller under Innstillinger (tannhjulet). Det er et engangskjøp som gjelder for alltid.</p>
-            </details>
-            <details>
-              <summary>Jeg har ny telefon – får jeg med meg alt?</summary>
-              <p>Ja, hvis du er logget inn med samme Apple-konto og iCloud. Rekorder, stjerner, dyr, hatter og rammer hentes fra iCloud av seg selv, og «Fjern reklame» kommer tilbake automatisk. Mangler reklamekjøpet, trykk «Gjenopprett kjøp» under Innstillinger.</p>
-            </details>
-            <details>
-              <summary>Kan jeg spille på både iPhone og iPad?</summary>
-              <p>Ja. Fremgangen lagres på enheten og i din egen iCloud, så du har de samme rekordene, stjernene og dyrene på alle enhetene med samme Apple-konto. Under Innstillinger i spillet ser du om iCloud er på.</p>
-            </details>
-            </div>
-            <div class="faq-group">
-            <h3>Tumble Numbers</h3>
-            <details>
-              <summary>Følger rekorden med til en ny telefon eller iPad?</summary>
-              <p>Nei. Rekorden lagres bare på enheten du spiller på, så iPhone og iPad har hver sin rekord, og den forsvinner hvis du sletter appen.</p>
-            </details>
-            <details>
-              <summary>Hvor ofte kommer det reklame?</summary>
-              <p>Etter hvert ferdige spill. Avbryter du et spill for å starte et nytt, kommer reklame bare hvis det er minst 6 minutter siden forrige. Varer et spill i over 30 minutter, kommer én kort reklamepause som varsles først. Ellers aldri mens du spiller. Spillet har ingen kjøp, heller ikke for å fjerne reklamen.</p>
-            </details>
-            <details>
-              <summary>Kan jeg fortsette et spill senere?</summary>
-              <p>Ja. Spillet lagres etter hvert trekk og når du legger bort appen, og fortsetter der du slapp neste gang du åpner den.</p>
-            </details>
-            </div>
-            <div class="faq-group">
-            <h3>Slippery Paws</h3>
-            <details>
-              <summary>Jeg står fast på et nivå</summary>
-              <p>Trykk «Hint» – det viser neste trekk på den korteste veien og koster én stjerne. Du får 3 stjerner for hvert nivå du låser opp, og kan kjøpe flere. Sier hintet «Try restarting», har sprukken is stengt veien: trykk «Restart» (da trekkes ingen stjerne).</p>
-            </details>
-            <details>
-              <summary>Når åpner uendelig modus?</summary>
-              <p>Etter at du har løst nivå 10.</p>
-            </details>
-            <details>
-              <summary>Følger fremdriften med til en ny telefon eller iPad?</summary>
-              <p>Ja, når du er logget inn i iCloud med samme Apple-konto: løste nivåer og stjernene (også kjøpte) følger med.</p>
-            </details>
-            </div>
-          </div>
-          <div data-l="en" lang="en">
-            <div class="faq-group">
-            <h3>Zoo Pop</h3>
-            <details>
-              <summary>How do I remove the ads?</summary>
-              <p>Buy “Remove ads” in the shop or under Settings (the gear). It's a one-time purchase that lasts forever.</p>
-            </details>
-            <details>
-              <summary>I have a new phone – do I keep everything?</summary>
-              <p>Yes, as long as you're signed in with the same Apple Account and iCloud. Your scores, stars, animals, hats and frames come back from iCloud automatically, and “Remove ads” is restored by itself. If the ad purchase is missing, tap “Restore purchases” under Settings.</p>
-            </details>
-            <details>
-              <summary>Can I play on both iPhone and iPad?</summary>
-              <p>Yes. Your progress is saved on the device and in your own iCloud, so you have the same scores, stars and animals on every device with the same Apple Account. Settings in the game shows whether iCloud is on.</p>
-            </details>
-            </div>
-            <div class="faq-group">
-            <h3>Tumble Numbers</h3>
-            <details>
-              <summary>Does my best score follow me to a new phone or iPad?</summary>
-              <p>No. The best score is stored only on the device you play on, so iPhone and iPad each have their own, and it's gone if you delete the app.</p>
-            </details>
-            <details>
-              <summary>How often are ads shown?</summary>
-              <p>After each finished game. If you abandon a game to start a new one, an ad is shown only if the previous ad was at least 6 minutes ago. If a game lasts more than 30 minutes, there is one short ad break, announced first. Otherwise never while you play. The game has no purchases, including none to remove ads.</p>
-            </details>
-            <details>
-              <summary>Can I continue a game later?</summary>
-              <p>Yes. The game is saved after every move and when you leave the app, and continues where you left off next time.</p>
-            </details>
-            </div>
-            <div class="faq-group">
-            <h3>Slippery Paws</h3>
-            <details>
-              <summary>I'm stuck on a level</summary>
-              <p>Tap “Hint” – it shows the next move on the shortest path and costs one star. You get 3 stars for every level you unlock, and you can buy more. If the hint says “Try restarting”, cracked ice has closed the way: tap “Restart” (no star is used).</p>
-            </details>
-            <details>
-              <summary>When does endless mode open?</summary>
-              <p>After you solve level 10.</p>
-            </details>
-            <details>
-              <summary>Does my progress follow me to a new phone or iPad?</summary>
-              <p>Yes, when you are signed in to iCloud with the same Apple Account: solved levels and your stars (also bought ones) come along.</p>
-            </details>
-            </div>
-          </div>
         </div>
       </section>
     </main>
@@ -338,6 +118,7 @@
           <a href="tumble-numbers/personvern.html">Tumble Numbers</a> ·
           <a href="slippery-paws/personvern.html">Slippery Paws</a></span>
         <a href="#support"><span data-l="nb" lang="nb">Brukerstøtte</span><span data-l="en" lang="en">Support</span></a>
+        <a href="https://gamesit.no/">gamesit.no</a>
         <a href="mailto:post@gamesit.no">post@gamesit.no</a>
       </nav>
     </footer>
