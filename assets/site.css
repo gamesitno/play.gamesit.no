@@ -1,4 +1,4 @@
-/* Eirikya Games – felles stil */
+/* Andersen Games & IT – felles stil for play.gamesit.no */
 :root {
   --bg: #1b1240;
   --bg-deep: #110b2b;
@@ -283,4 +283,41 @@ details p { margin: 8px 0 0; }
 
 @media (prefers-reduced-motion: no-preference) {
   .btn, .langs button { transition: background-color 0.15s ease; }
+}
+
+/* Lengre firmanavn i toppen: la det bryte over to linjer på smale skjermer */
+.langs { flex-shrink: 0; }
+@media (max-width: 480px) {
+  .brand { font-size: 16px; min-width: 0; }
+  .brand span { white-space: normal; line-height: 1.15; }
+  .brand span b { white-space: nowrap; }
+}
+
+/* Oversikt: ett kort per spill */
+.game-grid { display: grid; gap: 18px; margin-top: 30px; }
+.game-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 22px;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  padding: clamp(20px, 4vw, 32px);
+  color: var(--text);
+  text-decoration: none;
+}
+.game-card:hover { border-color: rgba(255, 212, 59, 0.5); background: rgba(255, 255, 255, 0.08); }
+.game-card:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
+.game-card h2 { margin: 0; font-size: clamp(24px, 4vw, 32px); line-height: 1.15; }
+.game-card h2 small { display: block; color: var(--muted); font-size: 0.5em; font-weight: 700; letter-spacing: 0.4px; margin-top: 4px; }
+.game-card p { margin: 10px 0 0; color: var(--muted); }
+.game-card .more { display: inline-block; margin-top: 14px; color: var(--yellow); font-weight: 800; }
+.support-single { grid-template-columns: 1fr; }
+.crumbs { margin: 10px 0 0; font-size: 15px; }
+.crumbs a { color: var(--muted); }
+.game-page { margin-top: 14px; }
+@media (max-width: 760px) {
+  .game-card { grid-template-columns: 1fr; }
+  .game-card .app-icon { width: 88px; }
 }
