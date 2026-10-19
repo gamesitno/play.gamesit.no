@@ -68,7 +68,7 @@ html[data-lang="nb"] [data-l="en"] { display: none !important; }
 }
 .brand img { width: 34px; height: 34px; border-radius: 9px; }
 .brand span { white-space: nowrap; }
-.brand span b { color: var(--yellow); }
+.brand span b { color: #22D3A0; font-weight: 600; }
 
 .langs {
   display: inline-flex;
