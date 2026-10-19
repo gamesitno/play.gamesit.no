@@ -68,8 +68,8 @@ html[data-lang="nb"] [data-l="en"] { display: none !important; }
 }
 .brand img { width: 34px; height: 34px; border-radius: 9px; }
 .brand span { white-space: nowrap; }
-.brand span { color: #C9C1EF; }
-.brand span b { color: #22D3A0; font-weight: 600; }
+.brand span { color: #7C8197; }
+.brand span b { color: #10A37F; font-weight: 600; }
 
 .langs {
   display: inline-flex;
